@@ -45,15 +45,6 @@ def render_mtokm_result():
     except ValueError:
         return "Sorry: something went wrong."
 
-
-@app.route("/")
-def hello():
-    return "Hello World!"
-def ftoc(ftemp):
-   return (ftemp-32.0)*(5.0/9.0)
-def ktom(km):
-    return km/1.6
-
 @app.route('/ftoc/<ftempString>')
 def convertFtoC(ftempString):
     ftemp = 0.0
